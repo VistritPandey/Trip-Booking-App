@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, TouchableOpacity } from "react-native";
-import { createStackNavigator } from "@react-navigation/stacks";
+import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 
 import { Onboarding, DestinationDetail } from "./screens/";
@@ -26,5 +26,5 @@ const App = () => {
 };
 
 export default () => {
-  return <App />;
+  return <App />;  
 };
