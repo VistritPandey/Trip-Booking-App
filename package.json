@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@react-navigation/native": "^5.9.2",
     "expo": "~40.0.0",
     "expo-font": "~8.4.0",
     "expo-status-bar": "~1.0.3",
