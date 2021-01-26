@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 
 import { Onboarding, DestinationDetail } from "./screens/";
+import {COLORS, SIZES, icons} from "./constants"
 
 const theme = {
   ...DefaultTheme,
@@ -19,7 +20,31 @@ const App = () => {
   return (
     <NavigationContainer theme={theme}>
       <Stack.Navigator initialRouteName={"Onboarding"}>
-        <Stack.Screen name="Onboarding" component={Onboarding} />
+        
+        <Stack.Screen name="Onboarding" component={Onboarding} 
+        options={{
+          title: null,
+          headerStyle: {
+            backgroundColor: COLORS.white
+          },
+          headerLeft: null,
+          headerRight: () => (
+            <TouchableOpacity
+            style={{ marginRight: SIZES.padding}}
+            onPress={() => console.log("Pressed")}
+            >
+              <Image
+              source={icons.barMenu}
+              resizeMode="contain"
+              style={{
+                width: 25,
+                height:25,
+              }} 
+              />
+            </TouchableOpacity>
+          )
+        }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
