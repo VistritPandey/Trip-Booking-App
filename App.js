@@ -2,7 +2,7 @@ import React from "react";
 import { Image, TouchableOpacity } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
-
+import Tabs from "./navigation/tabs"
 import { Onboarding, DestinationDetail } from "./screens/";
 import {COLORS, SIZES, icons} from "./constants"
 
@@ -45,6 +45,12 @@ const App = () => {
           )
         }}
         />
+        <Stack.Screen
+        name="Home"
+        component={Tabs}
+        >
+
+        </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -23,9 +23,9 @@ const Onboarding = ({ navigation }) => {
         </View>
         <TouchableOpacity
           style={{marginTop: SIZES.padding*2, width: '70%', height: 50, alignItems: 'center', justifyContent: 'center'}}
-          onPress={() => navigation.navigate("Home")}
-        >
+          >
           <Button
+          onPress={() => navigation.navigate("Home")}
           style={{ height: '100%', width: '100%', alignItems: 'center', justifyContent: 'center', borderRadius: 15 }}
             title="Start Here"
             color="#46aeff"
