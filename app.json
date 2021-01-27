@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Trip",
+    "name": "Trip App",
     "slug": "Trip",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Trip Booking App made by me, Vistrit Pandey(vistritpandey.me)",
+    "githubUrl": "https://github.com/VistritPandey/Trip-Booking-App"
   }
 }
