@@ -45,6 +45,11 @@ const App = () => {
           )
         }}
         />
+        <Stack.Screen 
+        name="DestinationDetail"
+        component={DestinationDetail}
+        options={{headerShown: false}}
+        />
         < Stack.Screen
                     name="Home"
                     component={Tabs}
